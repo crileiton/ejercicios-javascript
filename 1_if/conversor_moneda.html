@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Ejemplo de página web</h1>
+  <p>Bienvenidos estudiantes</p>
+  <p>Digite cantidad en pesos mexicanos: <input type="text" id="txt_mex"></p>
+  <p id="res"></p>
+  <button onclick="calcularMoneda();">Calcular</button>
+
+  <script type="text/javascript">
+    function calcularMoneda() {
+
+      var mx = document.getElementById("txt_mex").value;
+
+      if (isNaN(mx)) {
+        document.getElementById("res").innerHTML = "ERROR: El valor digitado no es un número.";
+      }
+      else {
+        var pesos_colombianos = mx * 172.19;
+
+        document.getElementById("res").innerHTML = "La cantidad en pesos colombianos es: " + pesos_colombianos;
+      }
+    }
+  </script>
+
+</body>
+
+</html>
