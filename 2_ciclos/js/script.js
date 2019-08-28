@@ -31,11 +31,11 @@ document.write("<b>Número 1 de la serie: </b>" + num1 + "</br>");
 document.write("<b>Número 2 de la serie: </b>" + num2 + "</br>");
 
 for (var i = 3; i <= 10000; i++) {
-    resultado = num1 + num2; r=2
-    
+    resultado = num1 + num2; r = 2
+
     num1 = num2;
     num2 = resultado;
-    
-    document.write("<b>Número "+ i + " de la serie: </b> " + resultado + "</br>");
+
+    document.write("<b>Número " + i + " de la serie: </b> " + resultado + "</br>");
 }
 
