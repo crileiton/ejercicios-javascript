@@ -16,4 +16,4 @@ function darPrecioFinal(pPrecioInicial) {
 
 }
 
-darPrecioFinal(-430);
+darPrecioFinal(8553);
