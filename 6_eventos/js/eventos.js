@@ -8,5 +8,3 @@ function darEscribirDato(){
     var texto = txtDato.value;
     alert('Usted digito: ' + texto);
 }
-
-document.write(btnEnviar)
